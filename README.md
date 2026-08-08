@@ -1,6 +1,7 @@
 # Kaşif — Geleceğin Meslekleri Keşif Asistanı
 
- **[Live Demo](https://damla-demirbilek.github.io/Kasif-Career-Assistant/)**
+Live Demo
+[Kaşif Career Assistant'ı Görüntüle](https://damla-demirbilek.github.io/Kasif-Career-Assistant/)
  
 ## 1. Proje Adı
 
