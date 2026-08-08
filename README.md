@@ -9,8 +9,7 @@ Live Demo
 
 Kaşif; DİGEM’e gelen 14–24 yaş arasındaki gençlerin ilgi alanlarını keşfetmelerini, geleceğin mesleklerini tanımalarını, bu mesleklerin gerektirdiği yetkinlikleri öğrenmelerini ve kendilerine uygun bir gelişim yol haritası oluşturmalarını sağlayan web tabanlı bir kariyer keşif platformudur.
 
-**Slogan:**  
-**Geleceğini tahmin etme, keşfet.**
+**Slogan:** **Geleceğini tahmin etme, keşfet.**
 
 ---
 
