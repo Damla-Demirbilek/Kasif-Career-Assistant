@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#D97706">
+<meta name="description" content="Kaşif — DİGEM için Geleceğin Meslekleri Keşif Asistanı">
+<title>Kaşif — Geleceğin Meslekleri Keşif Asistanı</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<nav class="nav">
+ <div class="container nav-inner">
+  <a class="brand" href="#home"><span class="logo">K</span><span>Kaşif</span></a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menü">☰</button>
+  <div class="nav-links" id="navLinks">
+   <a href="#home">Ana Sayfa</a><a href="#careers">Meslekler</a><a href="#quiz">Keşif Testi</a>
+   <a href="#dashboard">Panelim</a><a href="#roadmap">Yol Haritam</a><a href="#trainings">DİGEM Eğitimleri</a>
+   <a href="#mentor">AI Mentör</a><a href="#about">Hakkında</a>
+  </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir"><span id="themeIcon">🌙</span></button>
+ </div>
+</nav>
+<main>
+<section id="home" class="page active">
+ <div class="hero">
+  <div class="container hero-grid">
+   <div class="reveal">
+    <span class="kicker">🧭 DİGEM için geleceğin meslekleri platformu</span>
+    <h1>Geleceğini tahmin etme.<br><span>Keşfet, dene, geliştir.</span></h1>
+    <p class="lead">İlgi alanlarını analiz et, onlarca geleceğin mesleğini karşılaştır, sana özel 90 günlük yol haritasını oluştur ve güncel DİGEM eğitimlerine ulaş.</p>
+    <div class="hero-actions"><a class="btn primary" href="#quiz">Keşfe Başla <b>→</b></a><a class="btn secondary" href="#careers">Meslekleri İncele</a></div>
+    <div class="trust-row"><span>✓ Üyelik gerektirmez</span><span>✓ Hassas veri toplamaz</span><span>✓ Açıklanabilir öneriler</span></div>
+   </div>
+   <div class="hero-visual reveal">
+    <div class="glass-orbit">
+      <div class="orbit-center"><span>🧭</span><strong>Kaşif</strong><small>Kariyer Rotan</small></div>
+      <div class="orbit-card o1">🤖<b>AI</b></div><div class="orbit-card o2">🎨<b>UX</b></div>
+      <div class="orbit-card o3">🛡️<b>Siber</b></div><div class="orbit-card o4">🌱<b>Yeşil</b></div>
+    </div>
+   </div>
+  </div>
+  <div class="container stat-strip">
+   <div><strong id="careerCount">40+</strong><span>Meslek profili</span></div>
+   <div><strong>16</strong><span>Keşif sorusu</span></div>
+   <div><strong>90 gün</strong><span>Kişisel yol haritası</span></div>
+   <div><strong>5</strong><span>Resmî eğitim kaynağı</span></div>
+  </div>
+ </div>
+ <section class="section"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Nasıl çalışır?</span><h2>Keşiften eyleme uzanan platform</h2></div><p>Kaşif yalnızca meslek adı göstermez; neden eşleştiğini, hangi becerileri geliştirmen gerektiğini ve hangi eğitimlere yönelebileceğini açıklar.</p></div>
+  <div class="process-grid">
+   <article class="step-card"><span>01</span><i>🧠</i><h3>Kendini keşfet</h3><p>İlgi ve çalışma tercihlerini ölçen kısa testi tamamla.</p></article>
+   <article class="step-card"><span>02</span><i>🎯</i><h3>Eşleşmeleri gör</h3><p>Sana yakın meslekleri gerekçeleriyle birlikte incele.</p></article>
+   <article class="step-card"><span>03</span><i>🗺️</i><h3>Rotanı oluştur</h3><p>30, 60 ve 90 günlük adımları takip et.</p></article>
+   <article class="step-card"><span>04</span><i>🎓</i><h3>Eğitime bağlan</h3><p>Resmî DİGEM ve Kodluyoruz kaynaklarına ulaş.</p></article>
+  </div>
+ </div></section>
+ <section class="section surface"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Öne çıkan meslekler</span><h2>Geleceğin iş dünyasına geniş açıdan bak</h2></div><a class="text-link" href="#careers">Tümünü görüntüle →</a></div>
+  <div id="featuredCareers" class="career-grid"></div>
+ </div></section>
+</section>
+
+<section id="careers" class="page"><div class="page-hero"><div class="container"><span class="kicker">Meslek Kütüphanesi</span><h1>40'tan fazla geleceğin mesleğini keşfet.</h1><p class="lead">Yapay zekâdan yeşil dönüşüme, tasarımdan sağlık teknolojilerine kadar farklı alanları filtrele ve karşılaştır.</p></div></div>
+<div class="section"><div class="container">
+ <div class="toolbar"><div class="search-wrap">⌕<input id="careerSearch" placeholder="Meslek, beceri veya alan ara..."></div><select id="careerCategory"></select><button class="btn secondary" id="clearFilters">Filtreleri temizle</button></div>
+ <div class="category-chips" id="categoryChips"></div>
+ <div class="result-head"><span id="resultCount"></span><button class="compare-button" id="openCompare">Karşılaştır <b id="compareCount">0</b></button></div>
+ <div id="careerGrid" class="career-grid"></div>
+</div></div></section>
+
+<section id="career-detail" class="page"><div class="section"><div class="container" id="careerDetail"></div></div></section>
+
+<section id="quiz" class="page"><div class="page-hero"><div class="container"><span class="kicker">Keşif Testi</span><h1>İlgi alanlarını görünür kıl.</h1><p class="lead">16 soruyu yanıtla. Sonuçlar kesin kariyer kararı değil, keşif puanıdır.</p></div></div>
+<div class="section"><div class="container quiz-wrap"><div class="quiz-card">
+<div class="quiz-top"><strong id="questionIndex"></strong><span>Yaklaşık 3 dakika</span></div><div class="progress"><div id="progressBar"></div></div>
+<h2 id="questionText"></h2><div class="answer-scale" id="scaleButtons"></div>
+<div class="quiz-actions"><button class="btn secondary" id="prevQuestion">← Önceki</button><button class="btn primary" id="nextQuestion">Sonraki →</button></div>
+</div></div></div></section>
+
+<section id="results" class="page"><div class="page-hero"><div class="container"><span class="kicker">Keşif Sonuçları</span><h1>Sana yakın meslek alanları</h1><p class="lead">Uyum puanların, yanıtlarınla meslek profilleri arasındaki benzerliği gösterir.</p></div></div>
+<div class="section"><div class="container"><div id="resultsGrid" class="results-grid"></div><div class="ethics-note">Bu sonuçlar psikometrik değerlendirme veya kesin kariyer yönlendirmesi değildir. Alanları küçük projelerle deneyerek ve eğitmen desteği alarak karar vermen önerilir.</div></div></div></section>
+
+<section id="dashboard" class="page"><div class="page-hero"><div class="container"><span class="kicker">Kişisel Panel</span><h1>Keşif sonuçlarını tek ekranda gör.</h1></div></div>
+<div class="section"><div class="container" id="dashboardContent"></div></div></section>
+
+<section id="roadmap" class="page"><div class="page-hero"><div class="container"><span class="kicker">Yol Haritam</span><h1>Öğrenme hedefini somut adımlara dönüştür.</h1></div></div>
+<div class="section"><div class="container" id="roadmapContent"></div></div></section>
+
+<section id="trainings" class="page"><div class="page-hero"><div class="container"><span class="kicker">DİGEM Eğitimleri</span><h1>Resmî eğitim ve merkez kaynaklarına ulaş.</h1><p class="lead">Bağlantılar resmî kurum ve program sayfalarına yönlendirir. Açılan eğitimler ve tarihler kuruma göre değişebilir.</p></div></div>
+<div class="section"><div class="container"><div id="trainingGrid" class="training-grid"></div></div></section>
+
+<section id="mentor" class="page"><div class="page-hero"><div class="container"><span class="kicker">AI Mentör</span><h1>Sor, karşılaştır, planla.</h1><p class="lead">Kaşif Mentör meslekleri açıklar, başlangıç planı ve proje fikri önerir; kesin kariyer kararı vermez.</p></div></div>
+<div class="section"><div class="container mentor-layout"><aside class="mentor-side"><h3>Hızlı başlangıç</h3><div id="quickPrompts"></div><div class="ethics-note small">Kişisel, sağlıkla ilgili veya hassas bilgilerini paylaşma.</div></aside>
+<div class="chat-panel"><div class="chat-head"><div><span class="status-dot"></span><strong>Kaşif Mentör</strong></div><span>Güvenli demo modu</span></div><div id="messages" class="messages"><div class="msg bot">Merhaba! Bir mesleği açıklayabilir, iki alanı karşılaştırabilir veya sana 30 günlük başlangıç planı önerebilirim.</div></div><form id="chatForm" class="chat-form"><input id="chatInput" maxlength="320" placeholder="Örn. Veri analisti ve mobil geliştiriciyi karşılaştır..."><button class="btn primary">Gönder</button></form></div></div></div></section>
+
+<section id="about" class="page"><div class="page-hero"><div class="container"><span class="kicker">Kaşif Hakkında</span><h1>DİGEM için kullanıcı odaklı kariyer keşfi</h1></div></div>
+<div class="section"><div class="container info-grid">
+<article class="info-card"><i>🎯</i><h3>Çözülen problem</h3><p>Gençlerin geleceğin meslekleri ve gerekli yetkinlikler konusunda dağınık bilgiyle karşılaşması.</p></article>
+<article class="info-card"><i>🏛️</i><h3>DİGEM katkısı</h3><p>Meslek keşfini eğitim ve merkez kaynaklarıyla aynı deneyimde buluşturur.</p></article>
+<article class="info-card"><i>🔐</i><h3>Mahremiyet</h3><p>Üyelik ve hassas kişisel veri istemez; tercihler yalnızca cihazda saklanır.</p></article>
+<article class="info-card"><i>⚖️</i><h3>Etik yaklaşım</h3><p>Kesin karar, maaş garantisi veya kalıp yargılı meslek yönlendirmesi sunmaz.</p></article>
+</div></div></section>
+</main>
+
+<div class="compare-drawer" id="compareDrawer"><div class="compare-head"><h3>Meslekleri karşılaştır</h3><button id="closeCompare">×</button></div><div id="compareContent"></div></div>
+<div class="toast" id="toast"></div>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="#home"><span class="logo">K</span><span>Kaşif</span></a><p>Gençlerin geleceğin mesleklerini keşfetmesine ve gelişim rotası oluşturmasına yardımcı olan DİGEM odaklı dijital platform.</p></div><div><strong>Platform</strong><a href="#careers">Meslekler</a><a href="#quiz">Keşif Testi</a><a href="#roadmap">Yol Haritası</a></div><div><strong>Kaynaklar</strong><a href="#trainings">DİGEM Eğitimleri</a><a href="#about">Etik ve Mahremiyet</a></div></div><div class="container footer-bottom">© 2026 Kaşif. Eğitim ve kariyer keşfi amacıyla geliştirilmiştir.</div></footer>
+<script src="assets/js/data.js"></script><script src="assets/js/app.js"></script>
+</body></html>
